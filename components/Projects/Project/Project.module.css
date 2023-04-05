@@ -1,0 +1,54 @@
+.projectBox {
+	border: 1px solid grey;
+	padding: 5%;
+	border-radius:5px;
+	-webkit-box-shadow: 0px 5px 58px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 58px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 58px 2px rgba(0,0,0,0.75);
+	transition: all .25s ease-in-out;
+}
+.link {
+	text-decoration: none;
+	color: #eee;
+}
+
+.projectTitle {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0 0 5% 0;
+}
+
+.projectDescription {
+	font-size: 1em;
+	font-weight: 500;
+	color: #999;
+	margin: 0 0 5% 0;
+}
+
+.techStack {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.projectBox:hover {
+	cursor: pointer;
+	transform: scale(1.05);	
+}
+
+@media (max-width: 768px) {
+	.projectBox {
+		margin: 0 0 5% 0;
+	}
+
+	.projectTitle {
+		font-size: 1em;
+	}
+	.projectDescription {
+		font-size: .75em;
+	}
+	.techStack {
+		font-size: .6em;
+	}
+
+}

@@ -1,0 +1,41 @@
+.footerDiv {
+	display: flex;
+	background-color: #000;
+	padding: 2em;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	margin-top: 3%;
+}
+
+.footerText {
+	font-size: 1em;
+	margin-left: 5%;
+}
+
+.contact {
+	display: flex;
+	width: 30%;
+	justify-content: space-around;
+}
+
+.contactItem {
+	transition: all .25s;
+}
+
+.contactItem:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+	.footerDiv {
+		padding: 1em;
+		margin-top: 5%;
+	}
+
+
+	.footerText {
+		font-size: 0.8em;
+	}
+}
