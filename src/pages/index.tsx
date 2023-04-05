@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async () => {
         language: p.language,
       };
     })
-    .slice(0, 4);
+    .slice(0, 6);
   return {
     props: {
       projects: projects,

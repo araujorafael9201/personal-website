@@ -16,16 +16,22 @@
 }
 
 .seeAll {
-	font-size: 0em;
+	font-size: 1.1em;
 	font-weight: 500;
 	color: #999;
 	text-decoration: none;
+	transition: 0.3s all;
+}
+
+.seeAll:hover {
+	color: #fff;
+	transform: scale(1.1);
 }
 
 .header {
-	width: 50%;
+	width: 100%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: flex-end;
 }
 
