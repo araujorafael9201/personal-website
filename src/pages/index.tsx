@@ -3,7 +3,7 @@ import { GetStaticProps } from "next";
 import Hero from "../../components/Hero";
 import Projects from "../../components/Projects";
 
-import { getRepos } from "../../db";
+import { getRepos } from "../../utils";
 import ProjectType from "../../types/ProjectType";
 
 import styles from "./index.module.css";

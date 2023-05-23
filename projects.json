@@ -1,0 +1,47 @@
+{
+	"brasil-nas-olimpiadas": {
+		"url": "https://olimpiadas.rafaelaraujo.tech",
+		"image": "brasil-nas-olimpiadas.jpg",
+		"text": "Esse é um site básico feito com HTML, CSS e JS puros. Foi desenvolvido para a matéria de desenvolvimento web no IFRN."
+	},
+	"gerador-de-legendas": {
+		"url": "",
+		"image": "gerador-de-legendas.jpg",
+		"text": "Essa é uma plataforma web feita com Python (Flask), Redis e RabbitMQ para geração automática de legendas"
+	},
+	"tiktokmaker": {
+		"url": "",
+		"image": "tiktokmaker.jpg",
+		"text": "Script para geração automática de vídeos para o TikTok utilizando a API do Reddit"
+	},
+	"chess-analysis-board": {
+		"url": "",
+		"image": "chess-analysis-board.jpg",
+		"text": "Um tabuleiro de xadrez para análise de jogos feito com C++ e SFML"
+	},
+	"ml-studies": {
+		"url": "",
+		"image": "ml-studies.jpg",
+		"text": "Estudos sobre Machine Learning e Deep Learning"
+	},
+	"personal-website": {
+		"url": "https://rafaelaraujo.tech",
+		"image": "personal-website.jpg",
+		"text": "Esse é o meu site pessoal, feito com React e Next.js. Conta com Server Side Rendering e utiliza a API do GitHub para acessar informações sobre os repositórios"
+	},
+	"rabisco-galeria": {
+		"url": "",
+		"image": "rabisco-galeria.jpg",
+		"text": "Esse é um site feito em PHP para o projeto de desenho Rabisco, do IFRN Campus Mossoró. Ele conta com um sistema de login e um CRUD de imagens"
+	},
+	"ifrn-huawei-project": {
+		"url": "huawei.ifrn.edu.br",
+		"image": "ifrn-huawei-project.jpg",
+		"text": "Plataforma web para a inscrição de alunos, publicação de editais e divulgação de informações sobre as aulas dos cursos de capacitação Huawei ICT Academy no IFRN Mossoró."
+	},
+	"pong": {
+		"url": "",
+		"image": "pong.jpg",
+		"text": "Jogo Pong feito com C++ e SFML"
+	}
+}

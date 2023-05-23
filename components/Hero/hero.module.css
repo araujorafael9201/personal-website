@@ -4,7 +4,7 @@
 	align-items: flex-start;
 	justify-content: space-around;
 	min-height: 100vh;
-	width: 80vw;
+	min-width: 80vw;
 }
 
 @keyframes typing {

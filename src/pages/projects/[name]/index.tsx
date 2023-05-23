@@ -1,7 +1,12 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
+import Image from 'next/image';
 
-import { getRepoNames, getRepoInfo } from '../../../../db';
+import { FaGlobe, FaCode } from 'react-icons/fa';
+
+import { getRepoNames, getRepoFullInfo } from '../../../../utils';
 import ProjectType from '../../../../types/ProjectType';
+
+import styles from './index.module.css';
 
 
 interface ProjectPageProps {
@@ -11,12 +16,27 @@ interface ProjectPageProps {
 export default function ProjectPage(props: ProjectPageProps) {
 	const { repo } = props;
 	return (
-		<div className="container">
-			<h1>{repo.name}</h1>
-			<a href={repo.url}>Ver código fonte</a>
-			<p>{repo.description ? repo.description : "Sem Descrição"}</p>
-			<h2>Tecnologias</h2>
-			<p>{repo.language}</p>
+		<div className={styles.container}>
+			<div className={styles.header}>
+
+				<h1 className={styles.title}>{repo.name}</h1>
+				<div className={styles.headerLinks}>
+
+					{
+						repo.public_url != "" ?
+
+							<a className={styles.link} href={repo.public_url} target="_blank"><FaGlobe /></a> :
+							null
+					}
+					<a className={styles.link} href={repo.repo_url} target="_blank" ><FaCode /></a>
+				</div>
+			</div>
+			<p className={styles.description}>{repo.description ? repo.description : "Sem Descrição"}</p>
+			{repo.image != "" ?
+				<Image className={styles.repoImage} width={1500} height={1500} src={`/image/${repo.image}`} alt="Repository Image" /> :
+				null
+			}
+			<p className={styles.text}>{repo.text}</p>
 		</div>
 	)
 }
@@ -34,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 	return {
 		paths,
-		fallback: 'blocking',
+		fallback: false,
 	}
 }
 
@@ -42,7 +62,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 	let { name } = context.params;
 	name = name.toString();
 
-	const repo = await getRepoInfo(name);
+	const repo = await getRepoFullInfo(name);
 
 	return {
 		props: { repo },
