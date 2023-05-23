@@ -22,7 +22,7 @@ export default function Main(props: MainProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const projects = await getRepos(5);
+	const projects = await getRepos(6);
 	return {
 		props: {
 			projects: projects,
